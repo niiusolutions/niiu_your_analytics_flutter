@@ -1,6 +1,6 @@
 name: your_analytics
 description: "Your Analytics -  Flutter Client SDK package project."
-version: 0.0.1
+version: 1.0.0
 homepage: https://github.com/niiusolutions/niiu_your_analytics_flutter
 
 environment:
