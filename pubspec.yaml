@@ -1,7 +1,7 @@
 name: your_analytics
 description: "Your Analytics -  Flutter Client SDK package project."
 version: 0.0.1
-homepage: https://analytics.niiu.com
+homepage: https://github.com/niiusolutions/niiu_your_analytics_flutter
 
 environment:
   sdk: ">=3.2.6 <4.0.0"
