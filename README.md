@@ -44,6 +44,7 @@ apiServerUrl: Your Analytics backend url, ex: http://localhost:3000/api/v1
     appId: '',
     baseUrl: 'http://localhost:3000/api/v1',
     accessToken: null,
+    allowStorage: true,
   ));
 ```
 
@@ -85,6 +86,14 @@ accessToken: reserve for your extra user authentication, ex: your backend setup 
       ageRange: '21-29',
       interests: ['Food', 'Music'],
       others: {},
+    );
+```
+
+- update allowStorage:
+
+```
+  await analytics.update(
+      allowStorage: true
     );
 ```
 

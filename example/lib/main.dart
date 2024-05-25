@@ -7,6 +7,7 @@ Future<void> main() async {
     appId: '',
     baseUrl: 'http://localhost:3000/api/v1',
     accessToken: null,
+    allowStorage: true,
   ));
 
   runApp(const MyApp());
@@ -117,6 +118,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 style: TextStyle(fontSize: 20),
               ),
               onPressed: () => setPreferences(),
+            ),
+            TextButton(
+              child: const Text(
+                "Update allowStorage",
+                textAlign: TextAlign.start,
+                style: TextStyle(fontSize: 20),
+              ),
+              onPressed: () => update(),
             )
           ],
         ),
@@ -155,5 +164,11 @@ class _MyHomePageState extends State<MyHomePage> {
       interests: ['Food', 'Music'],
       others: {},
     );
+  }
+
+  update() async {
+    YourAnalytics analytics = YourAnalytics.instance;
+
+    await analytics.update(allowStorage: true);
   }
 }

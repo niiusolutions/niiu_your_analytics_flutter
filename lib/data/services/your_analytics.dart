@@ -29,7 +29,7 @@ class YourAnalytics {
     this.options = options;
     lv_02.options = options;
 
-    await lv_01.initialize();
+    await lv_01.initialize(options.allowStorage);
 
     final today =
         DateTime.now().copyWith(second: 0, millisecond: 0, microsecond: 0);
@@ -71,6 +71,10 @@ class YourAnalytics {
       lv_08: lv_08,
       details: {},
     );
+  }
+
+  Future<void> update({required bool allowStorage}) async {
+    await lv_01.update(allowStorage: allowStorage);
   }
 
   Future<void> trackVisit({

@@ -1,6 +1,6 @@
 name: your_analytics
 description: "Your Analytics -  Flutter Client SDK package project."
-version: 1.0.2
+version: 1.1.2
 homepage: https://github.com/niiusolutions/niiu_your_analytics_flutter
 
 environment:
@@ -14,6 +14,7 @@ dependencies:
   intl: ^0.18.0
   http: ^1.1.0
   get_storage: ^2.1.1
+  universal_html: ^2.2.4
 
 dev_dependencies:
   flutter_test:
